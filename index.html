@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>How to Learn to Program Fast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .intro img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .content .card {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            width: 48%;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .content .card {
+                width: 100%;
+            }
+        }
+
+        /* Popup Styles */
+        .popup {
+            display: none; 
+            position: fixed; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .popup-content {
+            background-color: white; 
+            padding: 20px; 
+            border-radius: 5px;
+            text-align: center; 
+            position: relative; 
+        }
+
+        .close {
+            position: absolute; 
+            top: 10px; 
+            right: 15px; 
+            font-size: 20px; 
+            cursor: pointer; 
+        }
+
+        .popup-image {
+            width: 100%; 
+            max-width: 300px; 
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>How to Learn to Program Fast</h1>
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#tips">Tips</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="intro" class="intro">
+        <h2>Welcome to Programming!</h2>
+        <p>Learning how to program can be fast and fun! Follow our guide to master it quickly.</p>
+        <img src="eduu.jpg" alt="Learning to program image">
+    </section>
+
+    <section id="tips" class="content">
+        <!-- First image -->
+        <div class="card">
+            <h3>Tip 1: Focus on Fundamentals</h3>
+            <img src="Ai how to program fast.jpg" alt="How to program fast image">
+            <p>Start by mastering the basic concepts like variables, loops, and conditionals. These are the building blocks of any programming language.</p>
+        </div>
+
+        <!-- Second image -->
+        <div class="card">
+            <h3>Tip 2: Practice Every Day</h3>
+            <img src="Ai focus on the stuff.jpg" alt="Focus on fundamentals image">
+            <p>Consistent practice is key to learning fast. Set aside a little time each day to write code, solve problems, and build projects.</p>
+        </div>
+
+        <!-- Third image -->
+        <div class="card">
+            <h3>Tip 3: Learn by Building Projects</h3>
+            <img src="how_to_become_A_programmer.jpg" alt="Become a programmer image">
+            <p>The fastest way to learn is by doing. Build small projects and gradually tackle more complex ones as you progress.</p>
+        </div>
+
+        <!-- Fourth image -->
+        <div class="card">
+            <h3>Tip 4: Explore Multiple Languages</h3>
+            <img src="A_professional_image_representing_the_concept_of_f.jpg" alt="Multiple languages image">
+            <p>Don't limit yourself to one language. Exploring different programming languages will give you a better understanding of core concepts.</p>
+        </div>
+
+        <!-- Fifth image -->
+        <div class="card">
+            <h3>Tip 5: Stay Curious and Keep Learning</h3>
+            <img src="Ai explore programming worlds.jpg" alt="Explore programming image">
+            <p>Programming is ever-evolving. Stay updated with new tools, frameworks, and best practices to ensure continuous growth.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 How to Learn to Program Fast. All rights reserved.</p>
+</footer>
+
+<!-- Popup HTML -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Welcome to "How to Learn to Program Fast"</h2>
+        <img src="hq720.jpg" alt="Learning Programming" class="popup-image">
+        <p>Start your programming journey with these tips!</p>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    function openPopup() {
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+
+    // Open the popup automatically when the page loads
+    window.onload = function() {
+        openPopup();
+    };
+</script>
+
+</body>
+</html>
